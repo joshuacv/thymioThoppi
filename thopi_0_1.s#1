@@ -873,13 +873,12 @@
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0" drill="0">
-<clearance class="0" value="0.205"/>
 </class>
 </classes>
 <parts>
-<part name="SIGNAL" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X5" device="" package3d_urn="urn:adsk.eagle:package:22470/2" value="SIGNAL"/>
+<part name="SIGNAL" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X5" device="" package3d_urn="urn:adsk.eagle:package:22470/2"/>
 <part name="POWER" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X5" device="" package3d_urn="urn:adsk.eagle:package:22470/2"/>
-<part name="RPI" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X20" device="" package3d_urn="urn:adsk.eagle:package:22443/2"/>
+<part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X20" device="" package3d_urn="urn:adsk.eagle:package:22443/2"/>
 </parts>
 <sheets>
 <sheet>
@@ -888,13 +887,13 @@
 <instances>
 <instance part="SIGNAL" gate="A" x="20.32" y="50.8" smashed="yes">
 <attribute name="NAME" x="13.97" y="59.055" size="1.778" layer="95"/>
-<attribute name="VALUE" x="13.97" y="40.64" size="1.778" layer="96" display="off"/>
+<attribute name="VALUE" x="13.97" y="40.64" size="1.778" layer="96"/>
 </instance>
 <instance part="POWER" gate="A" x="91.44" y="50.8" smashed="yes">
 <attribute name="NAME" x="85.09" y="59.055" size="1.778" layer="95"/>
 <attribute name="VALUE" x="85.09" y="40.64" size="1.778" layer="96"/>
 </instance>
-<instance part="RPI" gate="A" x="55.88" y="17.78" smashed="yes" rot="MR270">
+<instance part="JP1" gate="A" x="55.88" y="17.78" smashed="yes" rot="MR270">
 <attribute name="NAME" x="29.845" y="24.13" size="1.778" layer="95" rot="MR270"/>
 <attribute name="VALUE" x="86.36" y="24.13" size="1.778" layer="96" rot="MR270"/>
 </instance>
@@ -904,19 +903,17 @@
 <nets>
 <net name="N$1" class="0">
 <segment>
+<pinref part="JP1" gate="A" pin="1"/>
+<wire x1="33.02" y1="20.32" x2="33.02" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="30.48" x2="99.06" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="POWER" gate="A" pin="10"/>
-<wire x1="99.06" y1="30.48" x2="99.06" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="35.56" x2="99.06" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="30.48" x2="99.06" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="45.72" x2="96.52" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="RPI" gate="A" pin="2"/>
-<wire x1="33.02" y1="12.7" x2="33.02" y2="-2.54" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="-2.54" x2="99.06" y2="-2.54" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="-2.54" x2="99.06" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="RPI" gate="A" pin="3"/>
+<pinref part="JP1" gate="A" pin="3"/>
 <wire x1="35.56" y1="20.32" x2="35.56" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="SIGNAL" gate="A" pin="10"/>
 <wire x1="35.56" y1="45.72" x2="25.4" y2="45.72" width="0.1524" layer="91"/>
@@ -924,7 +921,7 @@
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="RPI" gate="A" pin="5"/>
+<pinref part="JP1" gate="A" pin="5"/>
 <wire x1="38.1" y1="20.32" x2="38.1" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="SIGNAL" gate="A" pin="8"/>
 <wire x1="38.1" y1="48.26" x2="25.4" y2="48.26" width="0.1524" layer="91"/>
@@ -932,7 +929,7 @@
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="RPI" gate="A" pin="6"/>
+<pinref part="JP1" gate="A" pin="6"/>
 <wire x1="38.1" y1="12.7" x2="38.1" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="POWER" gate="A" pin="9"/>
 <wire x1="38.1" y1="5.08" x2="88.9" y2="5.08" width="0.1524" layer="91"/>
@@ -941,7 +938,7 @@
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="RPI" gate="A" pin="11"/>
+<pinref part="JP1" gate="A" pin="11"/>
 <wire x1="45.72" y1="20.32" x2="45.72" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="SIGNAL" gate="A" pin="6"/>
 <wire x1="45.72" y1="50.8" x2="25.4" y2="50.8" width="0.1524" layer="91"/>

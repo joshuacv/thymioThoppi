@@ -61,9 +61,8 @@
 <plain>
 <wire x1="0" y1="57" x2="0" y2="3" width="0" layer="20"/>
 <wire x1="0" y1="3" x2="3" y2="0" width="0" layer="20" curve="90"/>
-<wire x1="3" y1="0" x2="102" y2="0" width="0" layer="20"/>
-<wire x1="102" y1="0" x2="105" y2="3" width="0" layer="20" curve="90"/>
-<wire x1="105" y1="3" x2="105" y2="57" width="0" layer="20"/>
+<wire x1="3" y1="0" x2="105" y2="0" width="0" layer="20"/>
+<wire x1="105" y1="0" x2="105" y2="57" width="0" layer="20"/>
 <wire x1="105" y1="57" x2="102" y2="60" width="0" layer="20" curve="90"/>
 <wire x1="102" y1="60" x2="3" y2="60" width="0" layer="20"/>
 <wire x1="3" y1="60" x2="0" y2="57" width="0" layer="20" curve="90"/>
@@ -71,8 +70,8 @@
 <hole x="4" y="4" drill="2.8"/>
 <hole x="101" y="20" drill="2.8"/>
 <hole x="101" y="4" drill="2.8"/>
-<text x="52.5" y="53.34" size="2.54" layer="21" font="vector" align="center">JCV</text>
-<text x="52.5" y="5.08" size="2.54" layer="21" align="center">RPI - BL Thoppi 0.1</text>
+<text x="52.5" y="53.34" size="1.778" layer="21" font="vector" align="center">JCV</text>
+<text x="52.5" y="5.08" size="1.778" layer="21" align="center">RPI - BL Thoppi 0.1</text>
 <dimension x1="0" y1="60" x2="105" y2="60" x3="52.5" y3="66.04" textsize="1.778" layer="1"/>
 <dimension x1="3.98953125" y1="18.600040625" x2="4.01046875" y2="21.399959375" x3="-4.826" y3="20.065996875" textsize="1.778" layer="1" dtype="diameter"/>
 <dimension x1="6.2" y1="20" x2="6.2" y2="60" x3="-12.1" y3="40" textsize="1.778" layer="1" dtype="diameter"/>
